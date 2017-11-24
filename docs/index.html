@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Портфолио</title>
+    <title>Моя страничка</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="верстка веб-сайтов, верстка html-5, css-3, bootstrap, лендинги">
     <meta name="description" content="Услуги по верстке веб-сайтов, качество, оперативность, низкие цены">
 
-    <!-- Bootstrap -->
-    <link href="libs/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    
+
     <!-- Fonts -->
     <link rel="stylesheet" type="text/css" href="fonts/noto/noto.css">
-    <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
 
     <!-- FavIcons -->
     <link rel="shortcut icon" href="img/icons/favicon.ico"  type="image/x-icon" />
@@ -27,54 +28,109 @@
   <body>
   	<!--Head-->
   	<div class="header">
-      <div class="header__inner">      
+        <div class="header__inner">      
         	<nav class="navigation">
-            <ul>
-              <li><a href="#">резюме</a></li>
-              <li><a href="#">портфолио</a></li>
-              <li><a href="#">контакты</a></li>
+            <div class="navigation__toggle navigation__toggle--fixed">
+              <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+            <ul class="navigation__list">
+              <li><a href="#resume">резюме</a></li>
+              <li><a href="#my_work">портфолио</a></li>
+              <li><a href="#contacts">контакты</a></li>
             </ul>
           </nav>
+
           <div class="header__centr-content">
-          <div class="my-foto my-foto--shadow">
-          <img src="img/usercontent/bg_foto.jpg" alt="Лара Баталова">
-        </div>
-        <h1 class="header__title">Lareta Batalova</h1>
-        <h2 class="header__subtitle">HTML верстальщик сайтов</h2> 
-        </div> 	 
-  	</div>
-  </div>  
+            <div class="my-foto my-foto--shadow">
+                <img src="img/usercontent/bg_foto.jpg" alt="Лара Баталова">
+             </div>
+            <h1 class="header__title">Lareta Batalova</h1>
+            <h2 class="header__subtitle">HTML верстальщик сайтов</h2> 
+          </div>
+
+          <!--Mouse scroll -->
+          <a href="#resume" class="mouse_scroll">
+            <div class="mouse">
+              <div class="wheel"></div>
+            </div>
+            <div>
+              <span class="m_scroll_arrows unu"></span>
+              <span class="m_scroll_arrows doi"></span>
+              <span class="m_scroll_arrows trei"></span>
+            </div>
+          </a>
+         <!--End Mouse scroll -->
+  	   </div>             
+    </div>  
   	<!--end Head-->
 
   	<!--About_my-->
-    <div class="about_my">
+    
+    <div class="resume section section--bottom-line" id="resume">
       <div class="container">
       	<div class="row">
       		<div class="hidden-xs col-sm-2 col-lg-3">
-      			<div class="block">Фото</div>
+      			<div class="my-foto my-foto--big ">
+                <img src="img/usercontent/bg_big_foto.jpg" alt="Лара Баталова">
+             </div>
       		</div>
       		<div class="col-xs-12 col-sm-10 col-lg-9">
-      			<div class="block">Резюме</div>
+      			<div class="heading">Резюме</div>
+            <p><strong>Ларета Баталова</strong><br>
+            28 лет, Саратов, Россия</p>
+            <p>Я на жизнь смотрю снисходительно. Диалектика такова: все - условно, все - относительно, только случай всему - голова! </p>
       		</div>
       	</div>
-      </div>
+     
   	
-  	<div class="container">
-    	<div class="row">
-    		<div class="col-xs-12 col-sm-5 col-sm-offset-2 col-lg-4 col-lg-offset-3">
-    			<div class="block">Опыт работы</div>
-    		</div>
+  	<!-- Опыт и образование-->
+
+      	<div class="row">
+      		<div class="col-sm-5 col-sm-offset-2 col-lg-4 col-lg-offset-3">
+      			<div class="heading heading--medium">Опыт работы</div>
+      		
+            <ul class="resume__list">
+              <li class="resume__list-item">
+                <div class="resume__list-item-period">Декабрь — настоящее время</div>
+                <div class="resume__list-item-resume-comment">Верстальщик в веб-студии “Веб-Старт”.</div>
+              </li>
+              <li class="resume__list-item">
+                <div class="resume__list-item-period">Октябрь 2015 — Декабрь 2016</div>
+                <div class="resume__list-item-resume-comment">Фрилансер, веб-дизайнер.</div>
+              </li>
+              <li class="resume__list-item">
+                <div class="resume__list-item-period">Сентбярь 2014 — Октябрь 2015</div>
+                <div class="resume__list-item-resume-comment">«ООО Кибер Софт» — Системный администратор.</div>
+              </li>
+            </ul>
+        </div>
+
     		<div class="col-xs-12 col-sm-5">
-    			<div class="block">Образование</div>
+    			<div class="heading heading--medium heading--medium-pl-90">Образование</div>       
+           <ul class="resume__list resume__list--pr-0">
+              <li class="resume__list-item">
+                <div class="resume__list-item-period">Декабрь 2016</div>
+                <div class="resume__list-item-resume-comment">Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</div>
+              </li>
+              <li class="resume__list-item">
+                <div class="resume__list-item-period">2008 — 2012</div>
+                <div class="resume__list-item-resume-comment">Московский Государственный университет дизайна и технологий, специальность дизайнер-технолог.</div>
+              </li>
+          </ul>   
     		</div>
     	</div>
+          <div class="row">
+          <div class="col-sm-4 col-sm-offset-2 col-lg-3 col-lg-offset-3">
+          <div class="button"><a href="#" download="Resume.docx">
+            <i class="fa fa-download" aria-hidden="true"></i>
+            Скачать резюме</a></div>     
     </div>
   </div>  
     <!--end About_my-->
 
   <div class="line"></div>
     <!--My work-->
-  <div class="my_work"> 
+  <div class="my_work" id="my_work"> 
     <div class="container">
       <div class="block">Мои работы</div>
       <div class="block">Меню-список работ</div>
@@ -106,7 +162,7 @@
     <!--End My work-->
 
     <!--Contacts-->
-  <div class="contacts"><!--раздел-->
+  <div class="contacts" id="contacts"><!--раздел-->
     <div class="container"><!--контейнер-->
       <div class="row"><!--осн ряд с кол конт и связь-->
         <div class="col-sm-6 col-lg-5">
@@ -148,14 +204,17 @@
 
 
 
-
-
-
-    
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="libs/jquery/jquery-1.11.2.min.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="libs/pagescroll2id/jquery.malihu.PageScroll2id.js"></script>
+   
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <!--Custom script -->
+     <script src="js/main.js"></script>
+     <script  src="js/navigation.js"></script>
   </body>
 </html>

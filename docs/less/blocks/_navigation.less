@@ -1,64 +1,88 @@
 .navigation {
-	position: absolute;
+	
 	top:51px;
 	right:0;
 	left:0; 
-	color: #FF69B4;
+	color: @white;
 	font-size: 18px;
 	font-weight: 700;
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
     letter-spacing: 1px;  
      @media (min-width: 768px){
      	font-size: 22px;
+     	position: absolute;
      }
 
-	ul{
+	ul.navigation__list{
+		display: none;		
 		margin: 0;
 		padding: 0;
-		text-align: center;
-		display: none;
-		list-style-type: none;
-		//justify-content: space-between;
+		text-align: center;		
+		position: fixed;
+		background-color: rgba(11,81,136,0.95); 
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		list-style-type: none;		
 		@media (min-width: 768px) {
-		display: block;}
+		display: block;
+		position: absolute;
+		top: 0px;}
+
+			&--open {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+		     }
 	   }
 
 	li {
-		margin: 0;
+		margin: 0 0 40px;
 		padding: 0;
-		display: inline-block;
-		margin-right: 100px;
-		&:last-child {
+		display: block;
+		margin-right: auto;
+		margin-left: auto;
+		@media (min-width: 768px) {
+		  	margin: 0;
+		  	padding: 0;
+		  	display: inline-block;
+		  	margin-right: 100px;
+		  	&:last-child {
 			margin-right: 0;
 		}
-		&.active { color:  @yellow; }
 	  }
-
+	}
+		  
 	a {
 		display: block;
 		text-decoration: none;
-		color: #FF69B4;
+		color: #c0c0c0;
 		/*padding-bottom: 15px;
 		padding-top: 15px;
 		padding-left: 20px;
 		padding-right: 20px;*/
 		&:hover, &:active, &:focus {
-			color: @yellow;
+			color: @white;
 			text-decoration: none;
 		}
 	}
 }
-.navigation__toggle-button {
+
+.navigation__toggle {
 	display: block;
-	position: absolute;	
+	font-size: 38px;
+	position: absolute;
 	cursor: pointer;	
-	top: 30px;
-	right: 30px;
-	width: 25px;
-	height: 20px;
-	background: url('../img/icons/navigation-icon.png');
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	
-}
+	right:16px;
+	top: 23px;
+	z-index: 2;	
+		&--fixed {
+    position: fixed;
+	}
+	@media (min-width: 768px) {
+		display: none;}
+ }
+
