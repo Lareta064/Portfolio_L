@@ -409,7 +409,7 @@ a.mouse_scroll:focus {
   }
 }
 .section--bottom-line {
-  border-bottom: 5px solid red;
+  border-bottom: 1px solid #FFF0F5;
 }
 .heading {
   font-size: 32px;
@@ -443,7 +443,6 @@ a.mouse_scroll:focus {
   padding-left: 40px;
   padding-right: 25px;
   margin-top: 20px;
-  margin-bottom: 85px;
   background-color: #0052c2;
   border-radius: 25px;
   word-spacing: 5px;
