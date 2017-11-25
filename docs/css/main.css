@@ -409,7 +409,7 @@ a.mouse_scroll:focus {
   }
 }
 .section--bottom-line {
-  border-bottom: 1px solid #e9eff3;
+  border-bottom: 5px solid red;
 }
 .heading {
   font-size: 32px;
@@ -443,10 +443,12 @@ a.mouse_scroll:focus {
   padding-left: 40px;
   padding-right: 25px;
   margin-top: 20px;
+  margin-bottom: 85px;
   background-color: #0052c2;
   border-radius: 25px;
   word-spacing: 5px;
   position: relative;
+  white-space: nowrap;
   box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.5);
 }
 @media (min-width: 768px) {
@@ -536,6 +538,13 @@ a.mouse_scroll:focus {
 @media (min-width: 1200px) {
   .header__centr-content {
     margin-top: -162px;
+  }
+}
+@media (min-width: 1200px) {
+  .resume {
+    background-image: url("../img/bg/laptop.png");
+    background-position: top 200px right;
+    background-repeat: no-repeat;
   }
 }
 .resume__list {
