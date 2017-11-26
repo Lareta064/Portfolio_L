@@ -71,7 +71,7 @@
       	<div class="row">
       		<div class="hidden-xs col-sm-2 col-lg-3">
       			<div class="my-foto my-foto--big ">
-                <img src="img/usercontent/bg_big_foto.jpg" alt="Лара Баталова">
+                <img src="img/usercontent/bg_big2_foto.jpg" alt="Лара Баталова">
              </div>
       		</div>
       		<div class="col-xs-12 col-sm-10 col-lg-9">
@@ -89,32 +89,43 @@
       		<div class="col-sm-5 col-sm-offset-2 col-lg-4 col-lg-offset-3">
       			<div class="heading heading--medium">Опыт работы</div>
       		
-            <ul class="resume__list">
-              <li class="resume__list-item">
-                <div class="resume__list-item-period">Декабрь — настоящее время</div>
-                <div class="resume__list-item-resume-comment">Верстальщик в веб-студии “Веб-Старт”.</div>
+            <ul class="defin-list">
+              <li class="defin-list__item">
+                <div class="defin-list__def">Декабрь — настоящее время</div>
+                <div class="defin-list__descrip">
+                  <p>Верстальщик в веб-студии “Веб-Старт”.</p>
+                </div>
               </li>
-              <li class="resume__list-item">
-                <div class="resume__list-item-period">Октябрь 2015 — Декабрь 2016</div>
-                <div class="resume__list-item-resume-comment">Фрилансер, веб-дизайнер.</div>
+              <li class="defin-list__item">
+                <div class="defin-list__def">Октябрь 2015 — Декабрь 2016</div>
+                <div class="defin-list__descrip">
+                  <p>Фрилансер, веб-дизайнер.</p>
+                  </div>
               </li>
-              <li class="resume__list-item">
-                <div class="resume__list-item-period">Сентбярь 2014 — Октябрь 2015</div>
-                <div class="resume__list-item-resume-comment">«ООО Кибер Софт» — Системный администратор.</div>
+              <li class="defin-list__item">
+                <div class="defin-list__def">Сентбярь 2014 — Октябрь 2015</div>
+                <div class="defin-list__descrip">
+                  <p>«ООО Кибер Софт» — Системный администратор.</p>
+                  </div>
               </li>
             </ul>
         </div>
 
     		<div class="col-xs-12 col-sm-5">
     			<div class="heading heading--medium heading--medium-pl-90">Образование</div>       
-           <ul class="resume__list resume__list--pr-0">
-              <li class="resume__list-item">
-                <div class="resume__list-item-period">Декабрь 2016</div>
-                <div class="resume__list-item-resume-comment">Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru</div>
+           <ul class="defin-list defin-list--pr-0">
+              <li class="defin-list__item">
+                <div class="defin-list__def">Декабрь 2016</div>
+                <div class="resume__list-item-resume-comment">
+                  <p>Курсы по верстке сайтов HTML5, CSS3 - WebCademy.ru
+                  </p>
+                </div>
               </li>
-              <li class="resume__list-item">
-                <div class="resume__list-item-period">2008 — 2012</div>
-                <div class="resume__list-item-resume-comment">Московский Государственный университет дизайна и технологий, специальность дизайнер-технолог.</div>
+              <li class="defin-list__item">
+                <div class="defin-list__def">2008 — 2012</div>
+                <div class="defin-list__descrip">
+                  <p>Московский Государственный университет дизайна и технологий, специальность дизайнер-технолог.</p>
+                  </div>
               </li>
           </ul>   
     		</div>
@@ -123,76 +134,280 @@
           <div class="col-sm-4 col-sm-offset-2 col-lg-3 col-lg-offset-3">
           <div class="button"><a href="#" download="Resume.docx">
             <i class="fa fa-download" aria-hidden="true"></i>
-            Скачать резюме</a></div>     
+            Скачать резюме</a>
+          </div>     
       </div>
     </div> 
   </div> 
 </div>
 <!--end About_my-->
  
-    <!--My work-->
-  <div class="my_work" id="my_work"> 
-    <div class="container">
-      <div class="block">Мои работы</div>
-      <div class="block">Меню-список работ</div>
-    
+    <!--portfolio-->
+  <div class="portfolio section section--pad-smaller" id="portfolio"> 
+    <div class="container ">
+      <div class="heading heading--center">Мои работы</div>
+
+      <!--Filter-->
+      <div class="filter">
+        <ul class="filter__block">
+          <li class="filter__element">
+            <span class="filter_button filter_button--active">все</span>
+          </li>
+          <li class="filter__element">
+            <span class="filter_button">HTML+CSS</span>
+          </li>
+          <li class="filter__element">
+            <span class="filter_button">Bootstrap</span>
+          </li> 
+          <li class="filter__element">
+            <span class="filter_button">учебные</span>
+          </li>
+          <li class="filter__element">
+            <span class="filter_button">на заказ</span>
+          </li>
+        </ul>
+      </div>
+       <!--//Filter-->                                            
+        <!--Portfolio block -->
       <div class="row">
-          <div class="col-lg-4">
-            <div class="block">Проект 1</div>
-          </div>  
-            <div class="col-lg-4">
-            <div class="block">Проект 2</div>
-          </div>  
-            <div class="col-lg-4">
-            <div class="block">Проект 3</div>
+        <!--portfolio item_1 (img+title+descrip-->
+          <div class=" col-sm-4 col-lg-4">
+            <div class="portfolio-item">
+              
+              <a href="https://lareta064.github.io/Organica/" target="_blank" class="portfolio-item__img">
+                <!--block search -->
+                <div class="portfolio-item__img__hover">
+                 <i class="fa fa-search" aria-hidden="true"></i><br>
+                 <span>смотреть макет</span> 
+                </div>
+                <!--//block search -->
+                <img src="img/usercontent/img/project_organica.jpg">
+              </a>
+              <div class="portfolio-item__title">
+                <a href="https://lareta064.github.io/Organica/" target="_blank">Учебный макет Organica</a>
+              </div>
+              <div class="portfolio-item__description">
+                Верстка одностраничного сайта по PSD макету.
+              </div>
+            </div>
           </div>
-      </div>
-      <div class="row">
-          <div class="col-lg-4">
-            <div class="block">Проект 4</div>
+          <!--//portfolio item-->
+
+          <!--portfolio item_2 (img+title+descrip-->
+          <div class=" col-sm-4 col-lg-4">
+            <div class="portfolio-item">
+              <a href="https://lareta064.github.io/Project_Apollo/"  target="_blank"class="portfolio-item__img">
+                <!--block search -->
+                <div class="portfolio-item__img__hover">
+                 <i class="fa fa-search" aria-hidden="true"></i><br>
+                 <span>смотреть макет</span> 
+                </div>
+                <!--//block search -->
+                <img src="img/usercontent/img/project_apollo.jpg">
+              </a>
+              <div class="portfolio-item__title">
+               <a href="https://lareta064.github.io/Project_Apollo/" target="_blank"> Учебный макет Аполло</a>
+              </div>
+              <div class="portfolio-item__description">
+                Верстка лендинга хостинг компании. Мобильная адаптивность.
+              </div>
+            </div>
           </div>  
-            <div class="col-lg-4">
-            <div class="block">Проект 5</div>
-          </div>  
-            <div class="col-lg-4">
-            <div class="block">Проект 6</div>
+          <!--//portfolio item-->
+
+          <!--portfolio item_3 (img+title+descrip-->
+          <div class=" col-sm-4 col-lg-4">
+            <div class="portfolio-item">
+              <a href="#" class="portfolio-item__img">
+                <!--block search -->
+                <div class="portfolio-item__img__hover">
+                 <i class="fa fa-search" aria-hidden="true"></i><br>
+                 <span>смотреть макет</span> 
+                </div>
+                <!--//block search -->
+               <img src="img/usercontent/img/portfolio.jpg">
+              </a>
+              <div class="portfolio-item__title">
+                <a href="#">Личный сайт портфолио</a>
+              </div>
+              <div class="portfolio-item__description">
+                Верстка личного сайта портфолио на котором вы сейчас находитесь. 
+              </div>
+            </div>
+          </div> 
+          <!--//portfolio item-->
+
+           <!--portfolio item_4 (img+title+descrip-->
+          <div class=" col-sm-4 col-lg-4">
+            <div class="portfolio-item">
+              <a href="#" class="portfolio-item__img">
+                <!--block search -->
+                <div class="portfolio-item__img__hover">
+                 <i class="fa fa-search" aria-hidden="true"></i><br>
+                 <span>смотреть макет</span> 
+                </div>
+                <!--//block search -->
+                <img src="img/usercontent/img/project_auto.jpg">
+              </a>
+              <div class="portfolio-item__title">
+                <a href="#">Промо сайт автомобиля</a>
+              </div>
+              <div class="portfolio-item__description">
+                Верстка сайта для презентации концепта автомобиля.
+              </div>
+            </div>
+          </div>
+          <!--//portfolio item-->
+
+           <!--portfolio item_5 (img+title+descrip-->
+          <div class=" col-sm-4 col-lg-4">
+            <div class="portfolio-item">
+              <div class="portfolio-item__img">
+                <!--block search -->
+                <div class="portfolio-item__img__hover">
+                 <i class="fa fa-search" aria-hidden="true"></i><br>
+                 <span>смотреть макет</span> 
+                </div>
+                <!--//block search -->
+               <img src="img/usercontent/img/project_moto.jpg">
+              </div>
+              <div class="portfolio-item__title">
+                <a href="#">Магазин мотоциклов</a>
+              </div>
+              <div class="portfolio-item__description">
+                Верстка лендинга для компании Indian Motorcycles.
+              </div>
+            </div>
+          </div>
+          <!--//portfolio item-->
+
+           <!--portfolio item_6 (img+title+descrip-->
+          <div class=" col-sm-4 col-lg-4">
+            <div class="portfolio-item">
+              <div class="portfolio-item__img">
+                <!--block search -->
+                <div class="portfolio-item__img__hover">
+                 <i class="fa fa-search" aria-hidden="true"></i><br>
+                 <span>смотреть макет</span> 
+                </div>
+                <!--//block search -->
+                <img src="img/usercontent/img/project_music.jpg">
+              </div>
+              <div class="portfolio-item__title">
+                <a href="#">Магазин аудиотехники</a>
+              </div>
+              <div class="portfolio-item__description">
+                Верстка страниц для магазина винтажной аудиотехники.
+              </div>
+            </div>
+          </div>   
         </div>
-      </div>
-    </div>
-  </div>  
-    <!--End My work-->
+       </div>           
+    <!--End My portfolio-->
 
     <!--Contacts-->
-  <div class="contacts" id="contacts"><!--раздел-->
-    <div class="container"><!--контейнер-->
-      <div class="row"><!--осн ряд с кол конт и связь-->
+
+
+  <div class="contacts section section--pad-smaller" id="contacts">
+    <div class="container">
+      <div class="row">
         <div class="col-sm-6 col-lg-5">
-        <div class="block">Контакты</div>
-                <div class="row">
-                    <div class="col-lg-6">
-                      <div class="block">E-mail</div>
-                      <div class="block">Skype</div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="block">Телефон</div>
-                      <div class="block">Адрес</div>
-                    </div>
-                 </div> 
-         </div>     
-              
-        <div class="col-sm-6 col-lg-6 col-lg-offset-1">
-          <div class="block">Обратная связь</div>
+        <div class="heading heading--white">Контакты</div>
+        <div class="contacts--description">
+          <p>
+            Если вы ищите специалиста по верстке сайтов,
+            front-end разработчика в команду или для работы над проектом —  я к вашим услугам.
+          </p>
         </div>
+        <!--Контактные данные-->
+        <div class="row">
+        <!--имейл и скайп-->
+        <div class="col-lg-6">                       
+              <ul class="defin-list">
+              <li class="defin-list__item">
+                <div class="defin-list__def defin-list__def--light ">Email</div>
+                <div class="defin-list__descrip">
+                  <p><a href="mailto:lareta064@gmail.com">lareta064@gmail.com</a></p>
+                  </div>
+              </li>
+
+              <li class="defin-list__item">
+                <div class="defin-list__def defin-list__def--light">Skype</div>
+                <div class="defin-list__descrip">
+                  <p><a href="skype:lareta_b?chat">lareta_b</a></p>
+                  </div>
+              </li>
+            </ul>
+          </div> 
+                    <!--тел и адрес-->
+            <div class="col-lg-6">
+              <ul class="defin-list">
+              <li class="defin-list__item">
+                <div class="defin-list__def defin-list__def--light">Телефон</div>
+                <div class="defin-list__descrip">
+                  <p><a href="tel:+7(8452) 55-77-55">+7(8452) 55-77-55</a></p>
+                </div>
+              </li>
+
+              <li class="defin-list__item">
+                <div class="defin-list__def defin-list__def--light">Адрес</div>
+                <div class="defin-list__descrip">
+                  <p>Россия, Саратов</p>
+                  </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="defin-list">
+              <li class="defin-list__item">
+                <div class="defin-list__def defin-list__def--light">Социальные сети</div>
+                <div class="social-icons__item">
+                      <a href="#" class="fa fa-vk" aria-hidden="true"></a>
+                      <a href="#" class="fa fa-twitter" aria-hidden="true"></a>
+                      <a href="#" class="fa fa-youtube" aria-hidden="true"></a>
+                      <a href="#" class="fa fa-instagram" aria-hidden="true"></a>
+                      <a href="#" class="fa fa-github" aria-hidden="true"></a>
+                </div>                
+              </li>
+             </ul>
+           </div>   
+        </div> 
+       </div>       
+            <!--Блок-форма связи-->  
+        <div class="col-sm-6 col-lg-6 col-lg-offset-1">
+
+        <div class="heading heading--medium heading--medium-mt heading--white">Связаться со мной</div> 
+
+        <form class="contact-form">
+          <input type="text" class="contact-form__input" name="name" placeholder="Ваше имя" >
+        <div>
+            <input type="text" class="contact-form__input contact-form__input--hw" name="email" placeholder="email" >
+            <input type="text" class="contact-form__input contact-form__input--hw" name="skype" placeholder="skype" >
+        </div>
+          <input type="text" class="contact-form__input" name="phone" placeholder="телефон" >
+          <div class="contact-form__bg-pencil">
+             <textarea class ="contact-form__textarea" placeholder="Ваше сообщение"></textarea>
+         </div>
+          <input type="submit"  class ="contact-form__submit" name="" value="отправить">
+        </form> 
       </div>
-    </div>   
-  </div>
+       <!--//Блок-форма связи--> 
+     </div>
+   </div>
+  </div>   
+</div>
+
   <!--End Contact-->  
 
   <!--Footer--> 
   <div class="footer">
     <div class="container">
       <div class="copyright">
-        <div class="block">Копирайт</div>
+      <p class="copyright-label">© 2016 Емельян Казаков</p>
+      <p>  Веб-разработик из Москвы, занимаюсь версткой и созданием сайтов.</p>
+      <p>Этот сайт сделал в рамках прохождения обучения по верстке на курсах от WebCademy.ru</p>
       </div>  
     </div>
   </div>
