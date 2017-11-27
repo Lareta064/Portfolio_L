@@ -623,7 +623,7 @@ a.mouse_scroll:focus {
 @media (min-width: 1500px) {
   .resume {
     background-image: url("../img/bg/laptop.png");
-    background-position: right 70%;
+    background-position: right 53%;
     background-repeat: no-repeat;
   }
 }
