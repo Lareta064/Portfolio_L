@@ -473,6 +473,7 @@ a.mouse_scroll:focus {
   position: relative;
   white-space: nowrap;
   box-shadow: 0px 3px 15px 0px rgba(0, 82, 194, 0.5);
+  outline: none;
 }
 @media (min-width: 768px) {
   .button {
@@ -490,6 +491,7 @@ a.mouse_scroll:focus {
 }
 .button:hover {
   background-color: rgba(65, 105, 225, 0.8);
+  outline: none !important;
 }
 .filter {
   font-size: 16px;
@@ -908,11 +910,13 @@ p.copyright-label {
   color: #065a97;
   border-color: #fff;
   background-color: #fff;
+  outline: none !important;
 }
 .contact-form__submit:active {
   color: #ffee40;
   border-color: #ffee40;
   background-color: transparent;
+  outline: none !important;
 }
 @media (min-width: 1200px) {
   .contact-form__bg-pencil {
