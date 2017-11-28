@@ -468,7 +468,7 @@ a.mouse_scroll:focus {
   padding-left: 26px;
   padding-right: 26px;
   color: #fff;
-  background-color: #2f4f4f;
+  background-color: #0052c2;
   border-radius: 60px;
   position: relative;
   white-space: nowrap;
@@ -855,6 +855,7 @@ p.copyright-label {
   border-width: 3px;
   border-color: #a2d1f4;
   padding: 10px 19px;
+  outline: none !important;
 }
 .contact-form__input--hw {
   width: 49%;
@@ -863,6 +864,7 @@ p.copyright-label {
 }
 .contact-form__input--hw:last-of-type {
   margin-right: 0;
+  outline: none !important;
 }
 .contact-form__textarea {
   color: #00599a;
@@ -883,6 +885,7 @@ p.copyright-label {
   border-width: 3px;
   border-color: #a2d1f4;
   padding: 10px 19px;
+  outline: none !important;
 }
 .contact-form__submit {
   width: 100%;
@@ -937,5 +940,27 @@ p.copyright-label {
     width: 203px;
     height: 153px;
   }
+}
+label.error {
+  display: block;
+  position: relative;
+  background-color: #AD1457;
+  color: #fff;
+  border-radius: 8px;
+  padding: 5px 15px;
+  margin-top: -4px;
+  margin-bottom: 15px;
+}
+label.error:after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 40px;
+  width: 0;
+  height: 0;
+  margin-left: -8px;
+  border-bottom: 5px solid #AD1457;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
 }
 /*# sourceMappingURL=main.css.map */

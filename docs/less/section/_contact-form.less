@@ -1,5 +1,4 @@
-.contact-form {
-  
+.contact-form { 
 		
 
 }
@@ -19,6 +18,7 @@
         border-width: 3px;
         border-color: rgb(162, 209, 244);
         padding: 10px 19px;
+        outline: none !important;
 	}
 }
 
@@ -28,6 +28,7 @@
 	margin-right: 2%;
 	 &:last-of-type {
         margin-right:0;
+        outline: none !important;
 	 }
 
 
@@ -51,6 +52,7 @@
         border-width: 3px;
         border-color: rgb(162, 209, 244);
         padding: 10px 19px;
+        outline: none !important;
     }
 
   }
@@ -112,3 +114,28 @@
 		}
 	}
 }
+ label.error {
+ 	display: block;
+ 	position: relative;
+ 	background-color: #AD1457;
+ 	color: #fff;
+ 	border-radius: 8px;
+ 	padding: 5px 15px;
+ 	margin-top: -4px;
+ 	margin-bottom: 15px;	
+
+ 	&:after {
+ 		content: "";
+ 		position: absolute;
+ 		bottom: 100%;
+ 		left: 40px;
+
+ 		width: 0;
+ 		height: 0;
+ 		margin-left: -8px;
+ 		border-bottom: 5px solid #AD1457;
+ 		border-left: 8px solid transparent;
+ 		border-right: 8px solid transparent;
+
+ 	}
+ }

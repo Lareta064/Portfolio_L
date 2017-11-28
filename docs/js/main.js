@@ -1,5 +1,6 @@
-$(document).ready(function() {
 
+
+$(document).ready(function(){
 
     //плавная прокрутка
     $("nav a,a[href='#top'],a[rel='m_PageScroll2id'],a.PageScroll2id").mPageScroll2id({
@@ -22,10 +23,25 @@ $(document).ready(function() {
     });
 	// End of FancyBox - galery
 
- //мой первый скрипт по перелючению класса
-   // $('.filter-block_button').on('click' function () {
-	//	$(this).toggleClass('.filter-block_button--active');
-	//});
-    //конец мой первый скрипт по перелючению класса
+ //скрипт валидации формы
+   
+   $("#contact-form").validate({
+    rules: {
+        name: { required: true },
+        email: { required: true, email: true },
+        //skype
+        //phone
+        message: { required: true }
+    },
+
+        messages: {
+           name: "Пожалуйста, представьтесь!",
+           email: {
+              required: "Пожалуйста, введите адрес почты",              
+              email: "Не корректный адрес, проверьте, пожалуйста!"
+        }
+    }
+   });
+    //конец валидации формы
 
 });
