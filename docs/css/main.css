@@ -541,7 +541,7 @@ a.mouse_scroll:focus {
 .filter-block_button:hover {
   color: #000;
 }
-.filter-block_button--active {
+.filter-block_button.active {
   border: 2px solid #0052c2;
   padding: 10px 29px 13px;
 }

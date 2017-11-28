@@ -8,7 +8,9 @@ $(document).ready(function() {
 
     //подключение фильтра работ
     $('#testfilter').mixItUp();
-    
+
+   
+
     // FancyBox - galery
 	$(".fancybox").fancybox({
 			// Default - with fix from scroll to top
@@ -19,5 +21,11 @@ $(document).ready(function() {
             }
     });
 	// End of FancyBox - galery
+
+ //мой первый скрипт по перелючению класса
+   // $('.filter-block_button').on('click' function () {
+	//	$(this).toggleClass('.filter-block_button--active');
+	//});
+    //конец мой первый скрипт по перелючению класса
 
 });
