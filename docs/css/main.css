@@ -493,7 +493,8 @@ a.mouse_scroll:focus {
   text-decoration: none;
   outline: none !important;
 }
-.button:hover .fa-download {
+.button:hover .fa-download,
+.button:focus .fa-download {
   color: #0052c2;
 }
 .button:active {
