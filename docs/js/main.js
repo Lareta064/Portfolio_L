@@ -7,6 +7,8 @@ $(document).ready(function(){
       highlightSelector:"nav a"
   });
 
+    
+
     //подключение фильтра работ
     $('#testfilter').mixItUp();
 

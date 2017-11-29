@@ -429,7 +429,7 @@ a.mouse_scroll:focus {
 }
 .heading {
   font-size: 32px;
-  color: #2f4f4f;
+  color: #0052c2;
   font-weight: 700;
   margin: 0 0 19px;
 }
@@ -492,6 +492,12 @@ a.mouse_scroll:focus {
 .button:hover {
   background-color: rgba(65, 105, 225, 0.8);
   outline: none !important;
+}
+.button:active {
+  background-color: #1e90ff;
+  border: 1px solid #0052c2;
+  outline: none !important;
+  color: red;
 }
 .filter-block {
   font-size: 16px;
