@@ -1,36 +1,35 @@
 $(document).ready(function() {
-	var navToggleButton = $('.navigation__toggle');
-	var navToggleIcon = $('.navigation__toggle .fa');
-	var navBlock = $('.navigation__list');
-	var navLink = $('.navigation__list a');
 
-   //мобильная навигация
-   //смена класса при клике по штриховке
-   navToggleButton.on('click', function(e) {
-   	e.preventDefault();
-    navBlock.toggleClass('navigation__list--open');
+  // Опеделяем переменные
+  var navToggleButton = $('#navigation__button');
+  var navToggleIcon = $('.navigation__toggle .fa');
+  var navBlock = $('.navigation__list');
+  var navBlockOpen = 'navigation__list--open';
+  var navLink = $('.navigation__list a');
 
-    if(navToggleIcon.hasClass('fa-bars')){
-	   navToggleIcon.removeClass('fa-bars');
-	   navToggleIcon.addClass('fa-times');
-    }else { 
-    	navToggleIcon.removeClass('fa-times');
-      navToggleIcon.addClass('fa-bars');
-    } 
-
-  })
-   // сворачивание меню при клике по ссылке
-    navLink.on('click', function(){
-   navBlock.removeClass('navigation__list--open');
-
-   if(navToggleIcon.hasClass('fa-bars')){
-     navToggleIcon.removeClass('fa-bars');
-     navToggleIcon.addClass('fa-times');
-    }else { 
-      navToggleIcon.removeClass('fa-times');
-      navToggleIcon.addClass('fa-bars');
-    } 
-
-    });
+  // События по клику на иконку
+  navToggleButton.on('click', function(e){
+    e.preventDefault();
+    navBlock.toggleClass(navBlockOpen);
+    navButtonToggle();
   })
 
+  // События по клику на ссылки
+  navLink.on('click', function(){
+    if ( navBlock.hasClass(navBlockOpen) ) {
+      navButtonToggle();
+    }
+    navBlock.removeClass(navBlockOpen);
+  })
+
+  // Функция для анимации иконки
+  function navButtonToggle(){
+    if ( navToggleButton.hasClass("active")) {
+      navToggleButton.removeClass("active");
+    } else {
+      navToggleButton.addClass("active");
+    }
+  }
+
+
+}); 

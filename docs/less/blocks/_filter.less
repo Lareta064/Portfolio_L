@@ -54,7 +54,17 @@
    }
 }
 
+#testfilter {
+	text-align: center;
+	@media (min-width:768px) {
+     text-align: left;
+	}
 
+	& .portfolio-item__title,
+	& .portfolio-item__description{
+		text-align: left;
+	}
+}
 
 #testfilter .mix {
 	display: none;

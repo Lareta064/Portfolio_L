@@ -29,14 +29,16 @@
   <body>
   	<!--Head-->
   	<div class="header">
-        <div class="header__inner">      
-        	<nav class="navigation">
-            <div class="navigation__toggle navigation__toggle--fixed">
-              <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
+        <div class="header__inner"> 
+         <!--Иконка навигации для маленьких экранов-->
+        <button id="navigation__button" class="cmn-toggle-switch cmn-toggle-switch__htx">
+           <span>toggle menu</span>
+        </button>
+         <!--//Иконка навигации для маленьких экранов-->
+        	<nav class="navigation">           
             <ul class="navigation__list">
               <li><a href="#resume">резюме</a></li>
-              <li><a href="#my_work">портфолио</a></li>
+              <li><a href="#portfolio">портфолио</a></li>
               <li><a href="#contacts">контакты</a></li>
             </ul>
           </nav>
@@ -454,7 +456,11 @@
     <script src="libs/jquery.validate/jquery.validate.js"></script>
 
     <!--Custom script -->
+    <script  src="js/navigation.js"></script>     
      <script src="js/main.js"></script>
-     <script  src="js/navigation.js"></script>
+     
+
   </body>
+
+
 </html>
